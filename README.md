@@ -5,10 +5,11 @@ GamingLicenseIndex (GLI) is a deterministic, read-only regulatory verification r
 This repository contains the **public specification layer only**.
 
 It documents the structural models and governance principles used by the GamingLicenseIndex system.  
-It does not contain any ingestion pipelines, scraping logic, scoring mechanisms, ranking systems, internal APIs, or database architecture.
+It does **not** contain any ingestion pipelines, scraping logic, scoring mechanisms, ranking systems, internal APIs, or database architecture.
 
 The purpose of this repository is institutional transparency and long-term auditability.
 
+---
 
 ## Scope
 
@@ -19,15 +20,16 @@ This repository defines:
   - Operator
   - License
 - Status classification model:
-  - VALID
-  - EXPIRED
-  - SUSPENDED
-  - UNCLEAR
+  - `VALID`
+  - `EXPIRED`
+  - `SUSPENDED`
+  - `UNCLEAR`
 - Deterministic validation principles
 - Negative signal handling policy
 - Versioning model
 - Example (non-production) dataset
 
+---
 
 ## Design Philosophy
 
@@ -43,6 +45,7 @@ GamingLicenseIndex is built on the following principles:
 
 The system is intentionally conservative and designed to be citation-safe.
 
+---
 
 ## Explicit Non-Scope
 
@@ -58,10 +61,11 @@ This repository does **not** include:
 
 All implementation layers remain private.
 
+---
 
 ## Governance
 
-GamingLicenseIndex is operated exclusively by Evergreen Media AS.
+GamingLicenseIndex is operated exclusively by **Evergreen Media AS**.
 
 Governance decisions prioritize:
 
@@ -69,6 +73,7 @@ Governance decisions prioritize:
 - Stability over expansion  
 - Auditability over automation  
 
+---
 
 ## Versioning
 
