@@ -1,0 +1,76 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://gaminglicenseindex.org/schemas/license.schema.json",
+  "title": "License",
+  "description": "A gambling license issued by a regulator to an operator",
+  "type": "object",
+  "required": [
+    "id",
+    "operator_id",
+    "regulator_id",
+    "license_id",
+    "jurisdiction",
+    "license_status",
+    "last_verified",
+    "created_at",
+    "updated_at"
+  ],
+  "properties": {
+    "id": {
+      "type": "string",
+      "format": "uuid",
+      "description": "Unique identifier for this license record"
+    },
+    "operator_id": {
+      "type": "string",
+      "format": "uuid",
+      "description": "Reference to operator entity"
+    },
+    "regulator_id": {
+      "type": "string",
+      "format": "uuid",
+      "description": "Reference to regulator entity"
+    },
+    "license_id": {
+      "type": "string",
+      "minLength": 1,
+      "description": "Official license identifier as issued by regulator"
+    },
+    "jurisdiction": {
+      "type": "string",
+      "minLength": 1,
+      "description": "Jurisdiction where license is valid"
+    },
+    "license_status": {
+      "type": "string",
+      "enum": ["VERIFIED", "SUSPENDED", "REMOVED", "UNCLEAR"],
+      "description": "License verification status"
+    },
+    "last_verified": {
+      "type": "string",
+      "format": "date-time",
+      "description": "ISO 8601 timestamp of last manual verification"
+    },
+    "source_url": {
+      "type": ["string", "null"],
+      "format": "uri",
+      "description": "Direct URL to regulator verification page (if available)"
+    },
+    "methodology_version": {
+      "type": ["string", "null"],
+      "pattern": "^v[0-9]+\\.[0-9]+$",
+      "description": "Specification version used for verification (e.g., 'v1.0')"
+    },
+    "created_at": {
+      "type": "string",
+      "format": "date-time",
+      "description": "ISO 8601 timestamp of record creation"
+    },
+    "updated_at": {
+      "type": "string",
+      "format": "date-time",
+      "description": "ISO 8601 timestamp of last record update"
+    }
+  },
+  "additionalProperties": false
+}

@@ -1,0 +1,10 @@
+{
+  "id": "a1b2c3d4-e5f6-47a8-b9c0-d1e2f3a4b5c6",
+  "slug": "example-gaming-authority",
+  "name": "Example Gaming Authority",
+  "country": "Example Country",
+  "official_url": "https://example-regulator.example",
+  "last_synced_at": "2026-02-11T12:00:00Z",
+  "created_at": "2026-01-01T00:00:00Z",
+  "updated_at": "2026-02-11T12:00:00Z"
+}

@@ -1,0 +1,13 @@
+{
+  "id": "c3d4e5f6-a7b8-49c0-d1e2-f3a4b5c6d7e8",
+  "operator_id": "b2c3d4e5-f6a7-48b9-c0d1-e2f3a4b5c6d7",
+  "regulator_id": "a1b2c3d4-e5f6-47a8-b9c0-d1e2f3a4b5c6",
+  "license_id": "EGA/B2C/001/2025",
+  "jurisdiction": "Example Jurisdiction",
+  "license_status": "VERIFIED",
+  "last_verified": "2026-02-11T12:00:00Z",
+  "source_url": "https://verification.example-regulator.example/license/EGA-B2C-001-2025",
+  "methodology_version": "v1.0",
+  "created_at": "2026-01-15T00:00:00Z",
+  "updated_at": "2026-02-11T12:00:00Z"
+}
